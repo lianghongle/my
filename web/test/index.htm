@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	<title>网站首页焦点图轮播切换技术 - 零基础代码实现</title>
+	<meta name="Keywords" content="">
+	<meta name="description" content="">
+
+	<style type="text/css">
+		img,a,ul,li{border:0 none;list-style-type:none;margin:0px;padding:0px;}
+		.adv{width:515px;background:red;margin:0 auto;}
+		
+		.focus{width:515px;height:205px;background:green;overflow:hidden;position:relative;}
+		
+		.focus ul{position:absolute;right:0px;bottom:8px;}
+		
+		.focus li{
+			border:0px red solid;
+			width:23px;
+			height:23px;
+			line-height:23px;
+			float:left;
+			background:url("images/focus2.png") no-repeat;
+			color:black;
+			font-weight:bold;
+			text-align:center;
+			font-family:"����";
+			cursor:pointer;
+			margin-right:6px;
+		}
+
+		.focus .focus_L{
+			background:url("images/focus1.png") no-repeat;
+		}
+
+	</style>
+
+	<!--position(λ��)<���Թ涨Ԫ�صĶ�λ����>:relative(��Զ�λ),absolute(��Զ�λ)-->
+
+	<!--overflow ���Թ涨���������Ԫ�ؿ�ʱ���������,hidden:���ݻᱻ�޼����������������ǲ��ɼ��-->
+
+	<!--background���� repeat�ظ�-->
+
+
+	<!--cursor(�����):pointer(ָ��)-->
+
+</head>
+
+<body>
+
+ <div class="adv">
+	
+	<div class="focus">
+		<p>
+			<a href="#"><img src="images/1.jpg" width="515" height="205"/></a>
+		</p>
+		<p>
+			<a href="#"><img src="images/2.jpg" width="515" height="205"/></a>
+		</p>
+		<p>
+			<a href="#"><img src="images/3.jpg" width="515" height="205"/></a>
+		</p>
+		
+		<ul>
+			<li class="focus_L">1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+
+	</div>
+
+ </div>
+
+
+<!-- jquery�ٷ���� -->
+<script src="js/jquery.js" type="text/javascript"></script>
+<!-- �Զ����װ���� -->
+<script src="js/focus.js" type="text/javascript"></script>
+</body>
+</html>
